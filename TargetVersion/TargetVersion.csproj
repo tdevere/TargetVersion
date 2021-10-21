@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="appcenter-post-build.sh" />
+    <None Include="..\appcenter-post-clone.sh">
+      <Link>appcenter-post-clone.sh</Link>
+    </None>
     <None Include="appcenter-pre-build.sh" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
