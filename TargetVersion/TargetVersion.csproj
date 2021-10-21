@@ -117,8 +117,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name ="MyCustomTask" AfterTargets="_ResolveAndroidTooling" Condition = "'$(Configuration)' == 'Release'">
-  <Message Text="AppCenter_Sample_Target" Importance="high" />
-  <Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Content '$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets' } " />
+  <Message Text="AppCenter_Sample_Target" Importance="high" /> 
+  <Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . { Get-ChildItem -Path $(MSBuildExtensionsPath) -Filter Xamarin.Android.CSharp.targets -Recurse -ErrorAction SilentlyContinue -Force | %{ Get-Content $_.FullName } }" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.
