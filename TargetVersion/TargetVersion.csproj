@@ -119,13 +119,13 @@
   <Target Name ="MyCustomTask" AfterTargets="_ResolveAndroidTooling" Condition = "'$(Configuration)' == 'Release'">
   <Message Text="AppCenter_Sample_Target" Importance="high" />
   <Message Text="Reading_11.1.0.26" Importance="high" />
-  <Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Contents ' /Library/Frameworks/Xamarin.Android.framework/Versions/11.1.0.26/lib/xamarin.android/xbuild/Xamarin/Android\Xamarin.Android.CSharp.targets' } " />
+  <Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Content ' /Library/Frameworks/Xamarin.Android.framework/Versions/11.1.0.26/lib/xamarin.android/xbuild/Xamarin/Android\Xamarin.Android.CSharp.targets' } " />
   <Message Text="Reading_11.0.2.0" Importance="high" />
-    <Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Contents ' /Library/Frameworks/Xamarin.Android.framework/Versions/11.0.2.0/lib/xamarin.android/xbuild/Xamarin/Android\Xamarin.Android.CSharp.targets' } " />
+    <Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Content ' /Library/Frameworks/Xamarin.Android.framework/Versions/11.0.2.0/lib/xamarin.android/xbuild/Xamarin/Android\Xamarin.Android.CSharp.targets' } " />
 	<Message Text="Reading_11.2.2.1" Importance="high" />
-	<Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Contents ' /Library/Frameworks/Xamarin.Android.framework/Versions/11.2.2.1/lib/xamarin.android/xbuild/Xamarin/Android\Xamarin.Android.CSharp.targets' } " />
+	<Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Content ' /Library/Frameworks/Xamarin.Android.framework/Versions/11.2.2.1/lib/xamarin.android/xbuild/Xamarin/Android\Xamarin.Android.CSharp.targets' } " />
 	<Message Text="Reading_11.3.0.4" Importance="high" />
-	<Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Contents ' /Library/Frameworks/Xamarin.Android.framework/Versions/11.3.0.4/lib/xamarin.android/xbuild/Xamarin/Android\Xamarin.Android.CSharp.targets' } " />
+	<Exec Command="pwsh -NoLogo -NoProfile -NonInteractive -Command . {Get-Content ' /Library/Frameworks/Xamarin.Android.framework/Versions/11.3.0.4/lib/xamarin.android/xbuild/Xamarin/Android\Xamarin.Android.CSharp.targets' } " />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.
