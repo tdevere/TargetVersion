@@ -1,7 +1,9 @@
 ﻿#!/usr/bin/env bash
 echo "Project Level Build Script"
-echo "upgrading npm i appcenter-cli"
+echo "Uninstall AppCenter CLI"
 appcenter --version
+npm uninstall appcenter-cli
+echo "install appcenter-cli"
 npm i appcenter-cli@latest
 appcenter --version
 #echo "Print project.assets.json"
