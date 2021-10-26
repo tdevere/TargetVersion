@@ -16,8 +16,11 @@ echo "Project Level Build Script"
 #echo "List Frameworks"
 #ls -d /Library/Frameworks/Mono.framework/Versions/*
 
+echo "cat $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh"
+cat $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh
+
 echo "Use Older version of Mono"
-/Users/runner/runners/2.192.0/scripts/select-xamarin-sdk.sh 6_4_0
+/bin/bash $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_4_0
 
 echo "Start Verbose Build"
 #/Library/Frameworks/Mono.framework/Versions/6_12_7/bin/msbuild /version /nologo
