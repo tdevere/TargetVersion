@@ -23,6 +23,6 @@ echo "Use Older version of Mono"
 /bin/bash $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_4_0
 
 echo "Start Verbose Build"
-/Library/Frameworks/Mono.framework/Versions/6_12_7/bin/msbuild /version /nologo
-/Library/Frameworks/Mono.framework/Versions/6_12_7/bin/msbuild /Users/runner/work/1/s/TargetVersion/TargetVersion.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab /p:Configuration=Release -v:diag
+/Library/Frameworks/Mono.framework/Versions/6_4_0/bin/msbuild /version /nologo
+/Library/Frameworks/Mono.framework/Versions/6_4_0/bin/msbuild /Users/runner/work/1/s/TargetVersion/TargetVersion.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab /p:Configuration=Release -v:diag
 
