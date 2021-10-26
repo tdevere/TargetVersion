@@ -3,8 +3,8 @@ echo "Project Level Build Script"
 echo "Uninstall AppCenter CLI"
 appcenter --version
 npm uninstall appcenter-cli
-echo "install appcenter-cli"
-npm i appcenter-cli@latest
+echo "Install appcenter-cli"
+npm i appcenter-cli@2.10.3
 appcenter --version
 #echo "Print project.assets.json"
 #find /$APPCENTER_SOURCE_DIRECTORY -type f -name project.assets.json -exec cat -n {} +
